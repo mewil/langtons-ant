@@ -30,7 +30,7 @@ def main():
     env = {}
     screen = Screen()
     screen.screensize(500, 500)
-    screen.tracer(0, 0)
+    screen.tracer(25, 0)
 
     ant = Turtle()
     ant.shape('square')
@@ -44,7 +44,6 @@ def main():
     for i in range(10001):
         p = step(ant, p, env)
         p2 = step(ant2, p2, env)
-        if i % 25 == 0: screen.update()
 
 if __name__ == "__main__":
     main()
